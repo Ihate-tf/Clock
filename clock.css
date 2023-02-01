@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: black;
+	color: white;
+	background-image: url(https://media.tenor.com/9vRAkntogEMAAAAd/background.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(7px);
+}
+
+.main {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	position: relative;
+	border: 1px solid red;
+}
+
+.main .number {
+	--rotate: 0;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	transform: rotate(var(--rotate));
+}
+
+.main .number1 {--rotate: 30deg;}
+.main .number2 {--rotate: 60deg;}
+.main .number3 {--rotate: 90deg;}
+.main .number4 {--rotate: 120deg;}
+.main .number5 {--rotate: 150deg;}
+.main .number6 {--rotate: 180deg;}
+.main .number7 {--rotate: 210deg;}
+.main .number8 {--rotate: 240deg;}
+.main .number9 {--rotate: 270deg;}
+.main .number10 {--rotate: 300deg;}
+.main .number11 {--rotate: 330deg;}
