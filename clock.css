@@ -1,3 +1,7 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -11,6 +15,7 @@ body{
 	min-height: 100vh;
 	background: black;
 	color: white;
+	font-family: 'Montserrat', sans-serif;
 	background-image: url(https://media.tenor.com/9vRAkntogEMAAAAd/background.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -22,7 +27,17 @@ body{
 	width: 300px;
 	border-radius: 50%;
 	position: relative;
-	border: 1px solid red;
+	background: inherit;
+}
+
+.main:after{
+	content: "";
+  position: absolute;
+	inset: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+	box-shadow: 0 0 5px 5px #930cf121 , 0 0 5px 10px #22108f1f;
 }
 
 .main .number {
@@ -32,6 +47,8 @@ body{
 	height: 100%;
 	width: 100%;
 	transform: rotate(var(--rotate));
+	font-family: 'Montserrat', sans-serif;
+/*	font-weight: 400;*/
 }
 
 .main .number1 {--rotate: 30deg;}
