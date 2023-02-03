@@ -62,3 +62,37 @@ body{
 .main .number9 {--rotate: 270deg;}
 .main .number10 {--rotate: 300deg;}
 .main .number11 {--rotate: 330deg;}
+
+.minutes{
+	position: absolute;
+	height: 140px;
+	width: 5px;
+	background: white;
+	left: 50%;
+	top: 4%;
+	rotate: calc(var(--rotation) * 1deg);
+	transform-origin: bottom;
+}	
+
+.hours{
+	position: absolute;
+	height: 100px;
+	width: 5px;
+	background: grey;
+	left: 50%;
+	top: 18%;
+	rotate: calc(var(--rotation) * 1deg);
+	transform-origin: bottom;
+}
+
+.seconds{
+	position: absolute;
+	height: 130px;
+	width: 2px;
+	background: red;
+	left: 51%;
+	top: 8%;
+	z-index: 10;
+	rotate: calc(var(--rotation) * 1deg);
+	transform-origin: bottom;
+}
