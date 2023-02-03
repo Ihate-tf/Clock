@@ -20,6 +20,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	backdrop-filter: blur(7px);
+	overflow: hidden;
 }
 
 .main {
@@ -48,7 +49,10 @@ body{
 	width: 100%;
 	transform: rotate(var(--rotate));
 	font-family: 'Montserrat', sans-serif;
-/*	font-weight: 400;*/
+	font-weight: 400;
+	padding: 5px;
+/*	color: darkgray;*/
+	color: silver;
 }
 
 .main .number1 {--rotate: 30deg;}
@@ -67,7 +71,7 @@ body{
 	position: absolute;
 	height: 140px;
 	width: 5px;
-	background: white;
+	background: indigo;
 	left: 50%;
 	top: 4%;
 	rotate: calc(var(--rotation) * 1deg);
@@ -78,7 +82,7 @@ body{
 	position: absolute;
 	height: 100px;
 	width: 5px;
-	background: grey;
+	background: #bd84f2;
 	left: 50%;
 	top: 18%;
 	rotate: calc(var(--rotation) * 1deg);
@@ -89,7 +93,7 @@ body{
 	position: absolute;
 	height: 130px;
 	width: 2px;
-	background: red;
+	background: inherit;
 	left: 51%;
 	top: 8%;
 	z-index: 10;
